@@ -25,10 +25,10 @@
                         <td>@expense.Value</td>
                         <td>@expense.Description</td>
                         <td>
-                            <a asp-action="CreateOrEditExpense" asp-action="" class="btn btn-success">Edit</a>
+                            <a asp-action="CreateOrEditExpense" asp-route-id="@expense.Id" class="btn btn-success">Edit</a>
                         </td>
                         <td>
-                            <a asp-action="DeleteExpense" class="btn btn-danger">Delete</a>
+                            <a asp-action="DeleteExpense" asp-route-id="@expense.Id" class="btn btn-danger">Delete</a>
                         </td>
                     </tr>
                 }
